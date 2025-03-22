@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="tab">Souls Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id='title'><img id="logo" src="images/title.png"></img></h1>
+    <p id="instruction">Rest now ashen one and click on the bonfire</p>
+
+    <div class="buttons">
+
+        <div class="button-container">
+            <img  id="smallEstus" src="images/button.jpg" alt="button" class="powerups">
+            <div class="button-text">Small Estus</div>
+        </div>
+
+        <div class="button-container">
+            <img  id="largeEstus" src="images/button.jpg" alt="button" class="powerups">
+            <div class="button-text">Large Estus</div>
+        </div>
+
+        <div class="button-container">
+            <img  id="humanity" src="images/button.jpg" alt="button" class="powerups">
+            <div class="button-text">Humanity</div>
+        </div>
+
+        <div class="button-container">
+            <img id="ember"src="images/button.jpg" alt="button" class="powerups">
+            <div class="button-text">Ember</div>
+        </div>
+
+    </div>
+    <div id="bonfire-container">
+        <img id="bonfire" src="images/dark-souls-bonfire.gif" alt="bonfire">
+    </div>
+
+    <div id="counter-container">
+        <div id="counter">0</div>
+    </div>
+
+    <div id="multiplier">0</div>
+    <div id="popup1" class="popup">A warm drop of Estus. Costs <span class="cost">50</span> souls. Adds <span class = 'souls'>+2</span> souls p/s.</div>
+    <div id="popup2" class="popup">A much needed Estus flask. Costs <span class="cost">300</span> souls. Adds <span class = 'souls'>+5</span> souls p/s.</div>
+    <div id="popup3" class="popup">Long lost Humanity. Costs <span class="cost">1000</span> souls. Adds <span class = 'souls'>+20</span> souls p/s.</div>
+    <div id="popup4" class="popup">A kindled ember from the time of the first flame. Costs <span class="cost">5000</span> souls. Adds <span class = 'souls'>+50</span> souls p/s.</div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

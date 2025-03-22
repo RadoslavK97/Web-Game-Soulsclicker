@@ -1,0 +1,141 @@
+html{
+        font-family: "Times New Roman", Times, serif;
+}
+#logo{
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+}
+
+
+#instruction{
+    display: inline-block; /* Make the element shrink to fit its content */
+    padding-top: 0px;
+    font-size: 20pt;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: whitesmoke;
+    border-bottom: 2px solid goldenrod;
+}
+
+
+#counter-container {
+    text-align: center;
+     /* This centers the inline-block element inside the container */
+}
+
+#counter{
+    padding-top: 0px;
+    margin-top: 20px;
+    font-size: 23pt;
+    color: whitesmoke;
+}
+
+#multiplier{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 16pt;
+    color: goldenrod
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 20px; /* Add space between buttons */
+    padding-top: 20px;
+}
+
+.button-container {
+    position: relative;
+    display: inline-block;
+}
+
+.powerups {
+    width: 250px; /* Set the width of the button images */
+    height: 50px; /* Maintain aspect ratio */
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.powerups:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.powerups:active{
+    transform: scale(0.9);
+    opacity: 0.6;
+}
+
+.button-text {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: gold;
+    font-size: 15pt;
+    text-shadow: 2px 2px 4px #000000;
+    pointer-events: none; /* Ensure the text doesn't interfere with clicking */
+}
+
+#bonfire-container {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding-top: 100px;
+}
+
+#bonfire {
+    width: 10%;
+    cursor: pointer;
+}
+
+
+#bonfire:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+#bonfire:active{
+    transform: scale(0.9);
+    opacity: 0.6;
+}
+
+body {
+    background-image: url('images/background5.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: gold;
+    text-shadow: 2px 2px 4px #000000; /* Add text shadow */
+    /* height: 100vh; */
+    border-left: solid 4px rgba(218, 165, 32, 0.3);
+    border-right: solid 4px rgba(218, 165, 32, 0.3);
+    margin-left: 110px;
+    margin-right: 110px;
+    text-align: center;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    background-color:rgba(48, 35, 35, 0.4);
+    border: 1px solid goldenrod;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.souls{
+    color:greenyellow;
+    font-style:bold;
+    font-size: 15pt; 
+}
+
+.cost{
+ color: whitesmoke;
+ font-style:bold;
+    font-size: 15pt; 
+};
+
